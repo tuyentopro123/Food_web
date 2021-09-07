@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resto</title>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+</head>
+<body>
+    <!-- Header section starts -->
+    <header>
+        <a href="#" class="logo"><i class="fas fa-utensils"></i>resto.</a>
+        <ul class="navbar">
+            <li class="navbar-item active"><a href="#">Home</a></li>
+            <li class="navbar-item"><a href="#dishes">Dishes</a></li>
+            <li class="navbar-item"><a href="#about">About</a></li>
+            <li class="navbar-item"><a href="#menu">Menu</a></li>
+            <li class="navbar-item"><a href="#view">View</a></li>
+            <li class="navbar-item"><a href="#order">Order</a></li>
+        </ul>
+
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <i class="fas fa-search" id="search-icon"></i>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+        </div>
+    </header>
+    
+    <!-- Header section end -->
+    <!-- search form  -->
+
+    <form action="" id="search-form">
+        <input type="search" placeholder="search here..." name="" id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+        <i class="fas fa-times" id="close"></i>
+    </form>
+    <!-- home section starts  -->
+
+<section class="home " id="home">
+    <div class="home__content home_slider">
+        <div class="carousel " data-flickity='{ "wrapAround": true,"prevNextButtons": false}'>
+            <div class="carousel-cell slider">
+                <div class="home_slider-content">
+                    <span>món ăn đặc biệt</span>
+                    <h3>mì trộn đậu</h3>
+                    <p>món mì truyền thống của sinh viên Việt Nam các bẹn nên ăn thử 1 lần cho biết
+                    </p>
+                    <a href="#" class="btn">order now</a>
+                </div>
+    
+                <div class="home_slider--image">
+                    <img src="./assets/img/home-img-1.png" alt="">
+                </div>
+            </div>
+    
+            <div class="carousel-cell slider">
+                <div class="home_slider-content">
+                    <span>món ăn gia đình</span>
+                    <h3>Gà nướng</h3>
+                    <p>món ăn chỉ có ở những nơi xa xôi hương vị thơm ngon đến từng miếng thịt
+                    </p>
+                    <a href="#" class="btn">order now</a>
+                </div>
+    
+                <div class="home_slider--image">
+                    <img src="./assets/img/home-img-2.png" alt="">
+                </div>
+            </div>
+    
+            <div class="carousel-cell slider">
+                <div class="home_slider-content">
+                    <span>món ăn đường phố</span>
+                    <h3>Pizza vàng</h3>
+                    <p>Pizza là một món ăn được nhiều thực khách yêu thích.Pizza Comapy lần đầu tiên có mặt ở Việt Nam vào năm 2013
+                    </p>
+                    <a href="#" class="btn">order now</a>
+                </div>
+    
+                <div class="home_slider--image">
+                    <img src="./assets/img/home-img-3.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+<!-- home section ends -->
+
+<!-- dishes section start -->
+<section class="dishes " id="dishes">
+    <div class="dishes__content grid wide">
+        <div class="dishes__header header">
+            <span>món ăn nhanh</span>
+            <h1>món ăn phổ biến</h1>
+        </div>
+        <div class="dishes__menu row sm-gutter">
+            <div class="dishes_box col l-4 m-6 c-11">
+                <div class="dishes__item item">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div> 
+                    <div class="dishes__item-image">
+                        <img src="./assets/img/dish-1.png"></img>
+                    </div>
+                    <div class="dishes__item-description">
+                        <h3>hamburger</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span>$15.99</span>
+                        <a href="#" class="btn">add to cart</a>
+                    </div>
+                </div>  
+            </div>
+
+            <div class="dishes_box col l-4 m-6 c-11">
+                <div class="dishes__item item">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div> 
+                    <div class="dishes__item-image">
+                        <img src="./assets/img/dish-2.png" alt="">
+                    </div>
+                    <div class="dishes__item-description">
+                        <h3>gà miếng</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span>$10.99</span>
+                        <a href="#" class="btn">add to cart</a>
+                    </div>
+                </div>  
+            </div>
+
+            <div class="dishes_box col l-4 m-6 c-11">
+                <div class="dishes__item item">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div> 
+                    <div class="dishes__item-image">
+                        <img src="./assets/img/dish-3.png" alt="">
+                    </div>
+                    <div class="dishes__item-description">
+                        <h3>gà quay nguyên con</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span>$20.99</span>
+                        <a href="#" class="btn">add to cart</a>
+                    </div>
+                </div>  
+            </div>
+
+            <div class="dishes_box col l-4 m-6 c-11">
+                <div class="dishes__item item">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div> 
+                    <div class="dishes__item-image">
+                        <img src="./assets/img/dish-4.png" alt="">
+                    </div>
+                    <div class="dishes__item-description">
+                        <h3>pizza</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span>$8.99</span>
+                        <a href="#" class="btn">add to cart</a>
+                    </div>
+                </div>  
+            </div>
+
+            <div class="dishes_box col l-4 m-6 c-11">
+                <div class="dishes__item item">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div> 
+                    <div class="dishes__item-image">
+                        <img src="./assets/img/dish-5.png" alt="">
+                    </div>
+                    <div class="dishes__item-description">
+                        <h3>bánh xốp</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span>$11.99</span>
+                        <a href="#" class="btn">add to cart</a>
+                    </div>
+                </div>  
+            </div>
+
+            <div class="dishes_box col l-4 m-6 c-11">
+                <div class="dishes__item item">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div> 
+                    <div class="dishes__item-image">
+                        <img src="./assets/img/dish-6.png" alt="">
+                    </div>
+                    <div class="dishes__item-description">
+                        <h3>đùi gà chiên</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span>$9.99</span>
+                        <a href="#" class="btn">add to cart</a>
+                    </div>
+                </div>  
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- dishes section ends -->
+<!-- About section starts -->
+
+<section class="about" id="about">
+    <div class="about__content grid wide">
+        <div class="about__header header">
+            <span>thông tin của chúng tôi</span>
+            <h1>tại sao lại chọn chúng tôi?</h1>
+        </div>
+        <div class="about__description row ">
+            <div class="about__description-img col l-6 c-11">
+                <img src="./assets/img/about-img.png" alt="">
+            </div>
+            <div class="about__description-box col l-6 c-11">
+                <div class="about__description-header">
+                    <h3>thực phẩm ngon nhất trong nước</h3>
+                </div>
+                <div class="about__description-content">
+                    <p>Ẩm thực Việt Nam là một trong những nền ẩm thực đặc sắc của khu vực Đông Á, ngày càng được quốc tế đánh giá cao.</p>
+                    <p>Bún chả được nhiều nhà phê bình ẩm thực danh tiếng lựa chọn, phở được yêu thích tại Nhật Bản, bánh mì mở cửa hàng ở Hàn Quốc, món ăn đường phố Việt Nam góp mặt trong chương trình Street Food của Netflix...</p>
+                    <p>Điều này cho thấy nền ẩm thực Việt Nam rất đa dạng, mới lạ, thu hút những người "sành ăn" trên toàn thế giới.</p>
+                </div>
+                <div class="icons-container row">
+                    <div class="icon col l-4 icon-1">
+                        <div class="icon-box">
+                            <i class="fas fa-shipping-fast"></i>
+                            <span>free delivery</span>    
+                        </div>
+                        
+                    </div>
+                    <div class="icon col l-4 icon-2">
+                        <div class="icon-box">
+                            <i class="fas fa-dollar-sign"></i>
+                            <span>easy payments</span>    
+                        </div>
+                        
+                    </div>
+                    <div class="icon col l-4 icon-3">
+                        <div class="icon-box">
+                            <i class="fas fa-headset"></i>
+                            <span>24/7 service</span>     
+                        </div>  
+                    </div>
+                </div>
+                <a href="#" class="btn">learn more</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About section end -->
+<!-- Menu section starts -->
+<section class="menu" id="menu">
+    <div class="menu__content grid wide">
+        <div class="menu__header header">
+            <span>thực đơn của chúng tôi</span>
+            <h1>món ăn đặc biệt ngày hôm nay</h1>
+        </div>
+        <div class="menu__menu row sm-gutter">
+            <div class="dishes_box col l-4 m-6 c-11">
+                <div class="menu__item item">
+                    <div class="icons" style="position: absolute;right: 20px;top: 20px;">
+                        <a href="#" class="fas fa-heart"></a>
+                    </div> 
+                    <div class="menu__item-image">
+                        <div class="img" style="background-image: url(./assets/img/menu-1.jpg);"></div>
+                    </div>
+                    <div class="menu__item-description">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <h3>hamburger</h3>
+                        <p>Bánh nhân thịt – Úc: Bánh nhân thịt được bán rộng rãi từ các nhà hàng cho tới quán café. ...</p>
+                        <a href="#" class="btn">add to cart</a>
+                        <span>$15.99</span>
+                    </div>
+                </div>  
+            </div>
+            
+            <div class="dishes_box col l-4 m-6 c-11">
+                <div class="menu__item item">
+                    <div class="icons" style="position: absolute;right: 20px;top: 20px;">
+                        <a href="#" class="fas fa-heart"></a>
+                    </div> 
+                    <div class="menu__item-image">
+                        <div class="img" style="background-image: url(./assets/img/menu-2.jpg);"></div>
+                    </div>
+                    <div class="menu__item-description">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <h3>hamburger</h3>
+                        <p>Bánh nhân thịt – Úc: Bánh nhân thịt được bán rộng rãi từ các nhà hàng cho tới quán café. ...</p>
+                        <a href="#" class="btn">add to cart</a>
+                        <span>$15.99</span>
+                    </div>
+                </div>  
+            </div>
+            
+            <div class="dishes_box col l-4 m-6 c-11">
+                <div class="menu__item item">
+                    <div class="icons" style="position: absolute;right: 20px;top: 20px;">
+                        <a href="#" class="fas fa-heart"></a>
+                    </div> 
+                    <div class="menu__item-image">
+                        <div class="img" style="background-image: url(./assets/img/menu-3.jpg);"></div>
+                    </div>
+                    <div class="menu__item-description">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <h3>hamburger</h3>
+                        <p>Bánh nhân thịt – Úc: Bánh nhân thịt được bán rộng rãi từ các nhà hàng cho tới quán café. ...</p>
+                        <a href="#" class="btn">add to cart</a>
+                        <span>$15.99</span>
+                    </div>
+                </div>  
+            </div>
+            
+            <div class="dishes_box col l-4 m-6 c-11">
+                <div class="menu__item item">
+                    <div class="icons" style="position: absolute;right: 20px;top: 20px;">
+                        <a href="#" class="fas fa-heart"></a>
+                    </div> 
+                    <div class="menu__item-image">
+                        <div class="img" style="background-image: url(./assets/img/menu-4.jpg);"></div>
+                    </div>
+                    <div class="menu__item-description">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <h3>hamburger</h3>
+                        <p>Bánh nhân thịt – Úc: Bánh nhân thịt được bán rộng rãi từ các nhà hàng cho tới quán café. ...</p>
+                        <a href="#" class="btn">add to cart</a>
+                        <span>$15.99</span>
+                    </div>
+                </div>  
+            </div>
+            
+            <div class="dishes_box col l-4 m-6 c-11">
+                <div class="menu__item item">
+                    <div class="icons" style="position: absolute;right: 20px;top: 20px;">
+                        <a href="#" class="fas fa-heart"></a>
+                    </div> 
+                    <div class="menu__item-image">
+                        <div class="img" style="background-image: url(./assets/img/menu-5.jpg);"></div>
+                    </div>
+                    <div class="menu__item-description">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <h3>hamburger</h3>
+                        <p>Bánh nhân thịt – Úc: Bánh nhân thịt được bán rộng rãi từ các nhà hàng cho tới quán café. ...</p>
+                        <a href="#" class="btn">add to cart</a>
+                        <span>$15.99</span>
+                    </div>
+                </div>  
+            </div>
+            
+            <div class="dishes_box col l-4 m-6 c-11">
+                <div class="menu__item item">
+                    <div class="icons" style="position: absolute;right: 20px;top: 20px;">
+                        <a href="#" class="fas fa-heart"></a>
+                    </div> 
+                    <div class="menu__item-image">
+                        <div class="img" style="background-image: url(./assets/img/menu-6.jpg);"></div>
+                    </div>
+                    <div class="menu__item-description">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <h3>hamburger</h3>
+                        <p>Bánh nhân thịt – Úc: Bánh nhân thịt được bán rộng rãi từ các nhà hàng cho tới quán café. ...</p>
+                        <a href="#" class="btn">add to cart</a>
+                        <span>$15.99</span>
+                    </div>
+                </div>  
+            </div>
+            
+            <div class="dishes_box col l-4 m-6 c-11">
+                <div class="menu__item item">
+                    <div class="icons" style="position: absolute;right: 20px;top: 20px;">
+                        <a href="#" class="fas fa-heart"></a>
+                    </div> 
+                    <div class="menu__item-image">
+                        <div class="img" style="background-image: url(./assets/img/menu-7.jpg);"></div>
+                    </div>
+                    <div class="menu__item-description">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <h3>hamburger</h3>
+                        <p>Bánh nhân thịt – Úc: Bánh nhân thịt được bán rộng rãi từ các nhà hàng cho tới quán café. ...</p>
+                        <a href="#" class="btn">add to cart</a>
+                        <span>$15.99</span>
+                    </div>
+                </div>  
+            </div>
+            
+            <div class="dishes_box col l-4 m-6 c-11">
+                <div class="menu__item item">
+                    <div class="icons" style="position: absolute;right: 20px;top: 20px;">
+                        <a href="#" class="fas fa-heart"></a>
+                    </div> 
+                    <div class="menu__item-image">
+                        <div class="img" style="background-image: url(./assets/img/menu-8.jpg);"></div>
+                    </div>
+                    <div class="menu__item-description">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <h3>hamburger</h3>
+                        <p>Bánh nhân thịt – Úc: Bánh nhân thịt được bán rộng rãi từ các nhà hàng cho tới quán café. ...</p>
+                        <a href="#" class="btn">add to cart</a>
+                        <span>$15.99</span>
+                    </div>
+                </div>  
+            </div>
+            
+            <div class="dishes_box col l-4 m-6 c-11">
+                <div class="menu__item item">
+                    <div class="icons" style="position: absolute;right: 20px;top: 20px;">
+                        <a href="#" class="fas fa-heart"></a>
+                    </div> 
+                    <div class="menu__item-image">
+                        <div class="img" style="background-image: url(./assets/img/menu-9.jpg);"></div>
+                    </div>
+                    <div class="menu__item-description">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <h3>hamburger</h3>
+                        <p>Bánh nhân thịt – Úc: Bánh nhân thịt được bán rộng rãi từ các nhà hàng cho tới quán café. ...</p>
+                        <a href="#" class="btn">add to cart</a>
+                        <span>$15.99</span>
+                    </div>
+                </div>  
+            </div>
+            
+        </div>
+    </div>
+</section>
+<!-- Menu section end -->
+<!-- view section starts -->
+<section class="view" id="view">
+    <div class="view__content grid wide">
+        <div class="view__header header">
+            <span>đánh giá của khách hàng</span>
+            <h1>những ý kiến đóng góp</h1>
+        </div>
+
+        <div class="view_wrapper">
+            <div class="view__list carousel" data-flickity='{ "freeScroll": true,"wrapAround": true, "prevNextButtons": false, "pageDots": false ,"autoPlay": 1500}'>
+                <div class="view__slider carousel-cell col l-4">
+                    <div class="view__slider-content">
+                        <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="./assets/img/pic-1.png" alt="">
+                        <div class="user-info">
+                            <h3>john deo</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Nền tảng trải nghiệm người dùng (UXP) là một tổ hợp những kỹ thuật công nghệ mà doanh nghiệp có thể sử dụng để tạo nên sự tương tác giữa một người dùng với các tính năng, quy trình, nội dung, dịch vụ của thương hiệu hoặc với những người dùng khác. Ngày nay, khái niệm UXP đang dần được thay thế bởi DXP (nền tảng kỹ thuật số) với sự ra đời, phát triển và ứng dụng rộng rãi của những phần mềm trong trải nghiệm người dùng.</p>
+                    </div>
+                </div>
+
+                <div class="view__slider carousel-cell col l-4">
+                    <div class="view__slider-content">
+                        <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="./assets/img/pic-2.png" alt="">
+                        <div class="user-info">
+                            <h3>john deo</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Nền tảng trải nghiệm người dùng (UXP) là một tổ hợp những kỹ thuật công nghệ mà doanh nghiệp có thể sử dụng để tạo nên sự tương tác giữa một người dùng với các tính năng, quy trình, nội dung, dịch vụ của thương hiệu hoặc với những người dùng khác. Ngày nay, khái niệm UXP đang dần được thay thế bởi DXP (nền tảng kỹ thuật số) với sự ra đời, phát triển và ứng dụng rộng rãi của những phần mềm trong trải nghiệm người dùng.</p>
+                    </div>
+                </div>
+
+                <div class="view__slider carousel-cell col l-4">
+                    <div class="view__slider-content">
+                        <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="./assets/img/pic-3.png" alt="">
+                        <div class="user-info">
+                            <h3>john deo</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Nền tảng trải nghiệm người dùng (UXP) là một tổ hợp những kỹ thuật công nghệ mà doanh nghiệp có thể sử dụng để tạo nên sự tương tác giữa một người dùng với các tính năng, quy trình, nội dung, dịch vụ của thương hiệu hoặc với những người dùng khác. Ngày nay, khái niệm UXP đang dần được thay thế bởi DXP (nền tảng kỹ thuật số) với sự ra đời, phát triển và ứng dụng rộng rãi của những phần mềm trong trải nghiệm người dùng.</p>
+                    </div>
+                </div>
+
+                <div class="view__slider carousel-cell col l-4">
+                    <div class="view__slider-content">
+                        <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="./assets/img/pic-4.png" alt="">
+                        <div class="user-info">
+                            <h3>john deo</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Nền tảng trải nghiệm người dùng (UXP) là một tổ hợp những kỹ thuật công nghệ mà doanh nghiệp có thể sử dụng để tạo nên sự tương tác giữa một người dùng với các tính năng, quy trình, nội dung, dịch vụ của thương hiệu hoặc với những người dùng khác. Ngày nay, khái niệm UXP đang dần được thay thế bởi DXP (nền tảng kỹ thuật số) với sự ra đời, phát triển và ứng dụng rộng rãi của những phần mềm trong trải nghiệm người dùng.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- view section end -->
+
+<!-- order section starts -->
+<section class="order" id="order">
+    <div class="order__content grid wide">
+        <div class="order__header header">
+            <span>đặt ngay</span>
+            <h1>miễn phí và tiện lợi</h1>
+        </div>
+        <div class="order__info c-11">
+            <form action="">
+                <div class="inputBox">
+                    <div class="input">
+                        <span>your name</span>
+                        <input onclick="return false" type="text" placeholder="nhập tên của bạn">
+                    </div>
+                    <div class="input">
+                        <span>your number</span>
+                        <input type="number" placeholder="nhập số điện thoại của bạn">
+                    </div>
+                </div>
+                <div class="inputBox">
+                    <div class="input">
+                        <span>your order</span>
+                        <input type="text" placeholder="nhập tên món ăn">
+                    </div>
+                    <div class="input">
+                        <span>additional food</span>
+                        <input type="text" placeholder="nhập đồ ăn kèm">
+                    </div>
+                </div>
+                <div class="inputBox">
+                    <div class="input">
+                        <span>how musch</span>
+                        <input type="number" placeholder="nhập số lượng">
+                    </div>
+                    <div class="input">
+                        <span>date and time</span>
+                        <input type="datetime-local">
+                    </div>
+                </div>
+                <div class="inputBox">
+                    <div class="input">
+                        <span>your address</span>
+                        <textarea name="" placeholder="enter your address" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="input">
+                        <span>your message</span>
+                        <textarea name="" placeholder="enter your message" id="" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+        
+                <input type="submit" value="order now" class="btn">
+        
+            </form>
+        </div>
+    </div> 
+</section>  
+<!-- order section end -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+    <div class="footer__content grid wide">
+        <div class="footer__box row">
+            <div class="footer__container col l-3">
+                <div class="footer__name">locations</div>
+                <ul class="footer__list">
+                    <li class="footer__item"><a href="#">india</a></li>
+                    <li class="footer__item"><a href="#">japan</a></li>
+                    <li class="footer__item"><a href="#">russia</a></li>
+                    <li class="footer__item"><a href="#">usa</a></li>
+                    <li class="footer__item"><a href="#">france</a></li>
+                </ul>
+            </div>
+             <div class="footer__container col l-3">
+                <div class="footer__name">quick links</div>
+                <ul class="footer__list">
+                    <li class="footer__item"><a href="#home">home</a></li>
+                    <li class="footer__item"><a href="#dishes">dishes</a></li>
+                    <li class="footer__item"><a href="#about">about</a></li>
+                    <li class="footer__item"><a href="#menu">menu</a></li>
+                    <li class="footer__item"><a href="#reviews">reviews</a></li>
+                    <li class="footer__item"><a href="#order">order</a></li>
+                </ul>
+            </div>
+             <div class="footer__container col l-3">
+                <div class="footer__name">contact info</div>
+                <ul class="footer__list">
+                    <li class="footer__item"><a href="#">+123-456-7890</a></li>
+                    <li class="footer__item"><a href="#">+111-222-3333</a></li>
+                    <li class="footer__item"><a href="#">tealive8522@Gmail.com</a></li>
+                    <li class="footer__item"><a href="#">vietnam8522@Gmail.com</a></li>
+                    <li class="footer__item"><a href="#"> Hà nội, Việt Nam - 100000</a></li>
+                </ul>
+            </div>
+             <div class="footer__container col l-3">
+                <div class="footer__name">Follow us</div>
+                <ul class="footer__list">
+                    <li class="footer__item"><a href="#">facebook</a></li>
+                    <li class="footer__item"><a href="#">twitter</a></li>
+                    <li class="footer__item"><a href="#">instagram</a></li>
+                    <li class="footer__item"><a href="#">linkedin</a></li>
+                </ul>
+            </div>
+        </div>
+    <div class="credit"> copyright @ 2021 by <span>mr.tuyen</span> </div>
+    </div>  
+</section>
+
+<!-- footer section ends -->
+
+<!-- loader part  -->
+<!-- <div class="loader-container">
+    <img src="./assets/img/loader.gif" alt="">
+</div> -->
+
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script src="./assets/js/script.js"></script>
+</body>
+</html>
