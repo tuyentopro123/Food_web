@@ -1,0 +1,235 @@
+@import "https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap";
+:root{
+--green:#27ae60;
+--black:#192a56;
+--light-color:#666;
+--box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1)
+}
+
+html{
+font-family:'Nunito',sans-serif;
+text-decoration:none;
+outline:none;
+border:none;
+text-transform:capitalize;
+font-size:62.5%
+}
+
+.btn{
+font-size:1.5rem;
+text-decoration:none;
+background-color:var(--black);
+color:#fff;
+padding:7px 28px;
+margin-top:12px;
+border-radius:5px
+}
+
+.btn:hover{
+background-color:var(--green);
+letter-spacing:.2rem
+}
+
+.dot{
+background-color:var(--green)!important
+}
+
+.header{
+text-align:center
+}
+
+.header span{
+color:var(--green);
+font-size:1.6rem;
+font-weight:bolder
+}
+
+.header h1{
+color:var(--black);
+font-size:2.5rem
+}
+
+p{
+font-size:1.4rem;
+color:var(--light-color)
+}
+
+@keyframes FadeOut{
+from{
+opacity:1
+}
+
+to{
+opacity:0
+}
+
+
+}
+
+@keyframes dropDown{
+from{
+opacity:0
+}
+
+to{
+opacity:1
+}
+
+
+}
+
+@media (max-width: 739px){
+.home_slider-content{
+padding-left:10px!important
+}
+
+.home .flickity-viewport{
+height:767.2px!important
+}
+
+.dishes_box{
+margin:auto
+}
+
+.about__description-box,.about__description-img{
+margin:auto
+}
+
+.menu__item-image{
+min-height:250px
+}
+
+.menu__item-image .img{
+height:240px
+}
+
+.icons-container .icon-1{
+flex:1
+}
+
+.icons-container .icon-3{
+flex:2
+}
+
+.icons-container .icon-box{
+justify-content:center;
+margin:5px 0
+}
+
+.about__description-box a{
+position:absolute;
+width:92%;
+text-align:center;
+line-height:32px;
+margin-top:-22px
+}
+
+.order__info{
+margin:auto
+}
+
+.inputBox{
+flex-direction:column
+}
+
+.inputBox .input{
+width:100%!important
+}
+
+.footer__box{
+flex-direction:column
+}
+
+.footer__container{
+text-align:center
+}
+
+
+}
+
+@media (min-width: 740px) and (max-width:1024px){
+.btn{
+font-size:1.2rem;
+text-decoration:none;
+background-color:var(--black);
+color:#fff;
+padding:7px 28px;
+margin-bottom:10px;
+border-radius:5px
+}
+
+.home .flickity-viewport{
+height:880.2px!important
+}
+
+.dishes__item span{
+margin-left:70px
+}
+
+.menu__item-image{
+min-height:220px
+}
+
+.menu__item-image .img{
+height:218px
+}
+
+
+}
+
+@media (max-width:1024px){
+header{
+justify-content:space-between
+}
+
+header .navbar{
+position:absolute;
+top:100%;
+right:0;
+left:0;
+background-color:#fff;
+border-top:1px solid rgba(0,0,0,0.2);
+border-bottom:1px solid rgba(0,0,0,0.2);
+clip-path:polygon(0 0,100% 0,100% 0,0 0);
+transition:all .2s linear;
+padding:10px;
+margin-top:-1px
+}
+
+.navbar.active{
+clip-path:polygon(0 0,100% 0,100% 100%,0 100%)
+}
+
+.navbar li{
+display:block;
+border-radius:3px;
+margin:10px 0
+}
+
+.navbar li a{
+padding:10px 15px
+}
+
+#menu-bars{
+display:inline-block
+}
+
+.slider{
+flex-direction:column
+}
+
+.home_slider-content{
+padding-left:40px
+}
+
+.home_slider--image img{
+width:100%;
+margin-top:20px
+}
+
+.about{
+padding-bottom:30px
+}
+
+
+}
